@@ -42,6 +42,7 @@ import { Component } from '@angular/core';
           </button>
         </div>
       </form>
+      <pre> {{newNote | json}} </pre>
     </div>
   `
 })
