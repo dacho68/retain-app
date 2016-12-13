@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
         <div class="row between-xs">
           <note-card
             class="col-xs-4"
-            [note]="note"
+            [noteInput]="note"
           >
           </note-card>
         </div>

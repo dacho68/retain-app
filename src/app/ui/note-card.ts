@@ -45,16 +45,16 @@ import {
         <i class="material-icons">check</i>
       </div>
       <div class="col-xs-12 title">
-        {{ note.title }}
+        {{ noteInput.title }}
       </div>
       <div class="col-xs-12 value">
-        {{ note.value }}
+        {{ noteInput.value }}
       </div>
     </div>
   `
 })
 export class NoteCard {
-  @Input() note = {};
+  @Input() noteInput = {};
 
   onChecked() {
     console.log('note clicked');
