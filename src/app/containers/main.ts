@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-  
+
 @Component({
   selector: 'main-container',
   template: `
@@ -11,4 +11,4 @@ import { Component } from '@angular/core';
     </div>
   `
 })
-export class Main {}
+export class Main { }
