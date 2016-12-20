@@ -54,6 +54,38 @@ This repo is designed to accompany the free [Angular 2 Fundamentals course](http
   <tbody>
 </table>
 
+# Debug
+
+- Add --remote-debugging-port=9222 to the Chrome shortcut as below
+      "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222
+
+- Launch Chrome from that shortcut
+- Update the launch.json
+```html
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Chrome against localhost, with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}"
+        },
+        {
+            "name": "Attach to Chrome, with sourcemaps",
+            "type": "chrome",
+            "request": "attach",
+            "port": 9222,
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}"
+        }
+    ]
+}
+```
+
+
 # Introduction Video
 
 [![Angular 2 Fundamentals](https://cloud.githubusercontent.com/assets/1016365/17240276/33ec0830-551f-11e6-94f8-a69846e322f9.png)](http://www.youtube.com/watch?v=ANM1xv0uJ7g)
