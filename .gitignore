@@ -2,3 +2,4 @@
 /dist/
 /npm-debug.log
 specs.js
+npm-debug.log.*
